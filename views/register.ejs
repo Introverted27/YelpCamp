@@ -1,0 +1,39 @@
+<% include ./partials/header%>
+<div class="container">
+  <header class="jumbotron login-header">
+    <div class="form">
+      <h1>Sign Up</h1>
+      <form id="signup-form" action="/register" method="post">
+        <div class="form-group" >
+          <label for="username">Name</label>
+          <input class="form-control" type="text" name="name" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <label for="username">Username<span class="red">*</span></label>
+          <input class="form-control" type="text" name="username" required placeholder="Username"data-toggle="tooltip" data-placement="right" title="Should be between 3 to 15 characters. Can contain alphanumeric values and underscore(_) or hyphen (-)" >
+        </div>
+        <div class="form-group">
+          <label for="username">Email<span class="red">*</span></label>
+          <input class="form-control" type="text" name="email" required placeholder="Email address">
+        </div>
+        <div class="form-group" data-toggle="tooltip" data-placement="right" title="Password should be between 8 to 15 characters. Must contain at least one uppercase letter, one lowercase letter, one number and one special character(@$!%*?&)">
+          <label for="password">Password<span class="red">*</span></label>
+          <input class="form-control" type="password" name="password" required placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="chkpassword">Confirm Password <span class="red">*</span></label>
+          <input class="form-control" type="password" name="chkpassword" required placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
+          <button class="g-recaptcha btn btn-lg btn-primary btn-block" data-sitekey="6Le8D1QUAAAAABIjdI7D3dmF7Ny2Qov9LFmztylj" data-callback="onSubmit">
+          Sign Up!
+          </button>
+        </div>
+      </form>
+      <p></p>
+      <a href="/campgrounds">Go Back</a>
+    </div>
+  </header>
+</div>
+
+<% include ./partials/footer%>

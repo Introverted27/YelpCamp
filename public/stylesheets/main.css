@@ -1,0 +1,60 @@
+
+.fa-user{
+  margin: 10px 30px;
+}
+
+.flash{
+  margin-top: 1.5rem;
+}
+
+.login-header {
+  position: relative;
+  width: 75%;
+  margin: 1rem auto ;
+}
+
+.card img{
+  width: 100%;
+  padding: 3px;
+}
+
+.card-body{
+  margin-top: 9px;
+}
+
+.login-header h1{
+  margin-bottom: 20px;
+}
+
+.form{
+  width: 40%;
+  margin: 25px auto;
+}
+
+.page{
+  margin: 20px auto;
+}
+
+.camp-img{
+  height: auto;
+}
+
+.red{
+  color: red;
+}
+
+
+#review-login-alert{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#searchtxt{
+  height: 2rem;
+}
